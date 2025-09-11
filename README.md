@@ -1,4 +1,4 @@
-# Portfolio – Mariem Ben Jaber
+
 
 Bienvenue dans mon portfolio GitHub.  
 Il regroupe différents projets réalisés dans le cadre académique et de stage, autour de la fouille de données, de l’intelligence artificielle appliquée et du développement logiciel.
