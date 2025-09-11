@@ -1,32 +1,31 @@
-DrillNet – Détection de la DRIL dans les images OCT
+# Drill_net_classification – Projet de stage
 
-Ce dépôt contient le notebook principal développé dans le cadre de mon stage en intelligence artificielle médicale.
-L’objectif est de construire et d’entraîner un modèle de deep learning capable de détecter la DRIL (Disorganization of Retinal Inner Layers) à partir d’images OCT.
+Ce projet a été réalisé dans le cadre de mon **stage en apprentissage automatique appliqué à l’imagerie médicale**.  
+L’objectif était de développer un modèle de deep learning capable de **détecter automatiquement deux biomarqueurs sur des images OCT** :
+- **DRIL** (*Disorganization of Retinal Inner Layers*)  
+- **Discontinuités (DISC)* des couches rétiniennes  
 
-📑 Contenu
+---
 
-Drill_net_classification.ipynb : notebook principal avec toutes les étapes
+## Ce que j’ai fait
+- Création d’un **pipeline complet** d’entraînement et d’évaluation du modèle.
+- Utilisation d’un modèle **CNN (ResNet18)** adapté aux images OCT.
+- Mise en place de techniques pour améliorer la robustesse :
+  - Optimiseur **AdamW** avec régularisation L2.
+  - Scheduler de **warm-up suivi d’un décroissance cosinus** pour le taux d’apprentissage.
+  - **Early stopping** basé sur la F1-score de la classe positive.
+- Évaluation du modèle sur un jeu de test indépendant.
 
-Préparation et nettoyage des données
+---
 
-Entraînement du modèle (CNN – ResNet18 et variantes DrillNet)
+## Résultats obtenus
+- **Accuracy (test)** : 0.84  
+- **F1-score (classe DRIL/DISC)** : 0.86  
+- Bon rappel (0.88) → le modèle détecte bien les cas positifs.  
+- Le modèle est donc **valable pour la détection des deux biomarqueurs**.
 
-Évaluation des performances (accuracy, recall, f1-score, matrice de confusion)
+---
 
-🛠️ Technologies utilisées
-
-Python, PyTorch
-
-Jupyter Notebook
-
-Scikit-learn, Pandas, Matplotlib
-
-📊 Résultats
-
-Modèle DrillNet : accuracy ≈ 84% sur le jeu de test
-
-Amélioration du rappel pour la détection des cas positifs (DRIL)
-
-👩‍💻 Auteur
-
-Mariem Ben Jaber – Stage en IA médicale (Polytechnique Montréal & Sirius Net)
+## Impact
+Ce travail montre qu’il est possible de développer des outils d’IA qui assistent les médecins dans la détection de biomarqueurs sur OCT.  
+Le modèle DrillNet constitue une **preuve de concept** pour un système d’aide au diagnostic en ophtalmologie.
