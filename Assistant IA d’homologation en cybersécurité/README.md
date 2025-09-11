@@ -1,4 +1,5 @@
 Assistant IA d’homologation en cybersécurité (Hydro-Québec)
+
 🎯 **Contexte**
 
 Ce projet s’inscrit dans le cadre du projet intégrateur final (INF8970 / INF8980 / INF8985) en collaboration avec Hydro-Québec.
