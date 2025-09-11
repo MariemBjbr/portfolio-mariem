@@ -41,10 +41,13 @@ Les dépendances vont toujours de l'extérieur vers le centre (l'hexagone).
 
 **Avantages**
 
-Faible couplage: Le noyau métier est indépendant de l'infrastructure, ce qui permet de changer de base de données, d'interface utilisateur ou d'autres services sans affecter la logique métier. 
-Facilité de test: Le noyau métier peut être testé en isolation grâce à des adaptateurs qui simulent l'environnement technique (mocks), permettant des tests unitaires approfondis. 
-Évolutivité et maintenance: Il est plus facile d'ajouter de nouvelles fonctionnalités ou de modifier des existantes sans risquer des régressions fonctionnelles. 
-Flexibilité: L'application peut être pilotée par différents types d'interfaces (utilisateur, tests automatisés, scripts) ou interagir avec divers systèmes externes. 
+**Faible couplage**: Le noyau métier est indépendant de l'infrastructure, ce qui permet de changer de base de données, d'interface utilisateur ou d'autres services sans affecter la logique métier. 
+
+**Facilité de test**: Le noyau métier peut être testé en isolation grâce à des adaptateurs qui simulent l'environnement technique (mocks), permettant des tests unitaires approfondis. 
+
+**Évolutivité et maintenance**: Il est plus facile d'ajouter de nouvelles fonctionnalités ou de modifier des existantes sans risquer des régressions fonctionnelles. 
+
+**Flexibilité**: L'application peut être pilotée par différents types d'interfaces (utilisateur, tests automatisés, scripts) ou interagir avec divers systèmes externes. 
 
 📅 **Statut du projet**
 
