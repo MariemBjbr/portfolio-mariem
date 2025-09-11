@@ -11,5 +11,3 @@ Il regroupe différents projets réalisés dans le cadre académique et de stage
 - 🧠 **DrillNet – Détection DRIL (OCT)** → [drillnet](drillnet)  
   Réseau de neurones convolutionnel pour la détection de biomarqueurs.  
 
-- 🖥️ **Interface d’annotation médicale** → [annotation-interface](annotation-interface)  
-  Application web (PHP/MySQL) pour annoter et gérer des images médicales.  
