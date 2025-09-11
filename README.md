@@ -11,8 +11,7 @@ Il regroupe différents projets réalisés dans le cadre académique et de stage
 - 🧠 **DrillNet – Détection DRIL (OCT)** → [drillnet](drillnet)  
   Réseau de neurones convolutionnel pour la détection de biomarqueurs.
   
-🔒  **Assistant IA d’homologation en cybersécurité (Hydro-Québec)** → [Assistant IA d’homologation en cybersécurité]
-
+🔒  **Assistant IA d’homologation en cybersécurité (Hydro-Québec)** → assistant-ia-homologation-cybersecurite
 Projet en cours – Remise finale prévue le 5 décembre 2025
 
 Projet intégrateur réalisé en collaboration avec Hydro-Québec.
