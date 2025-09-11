@@ -1,4 +1,6 @@
-Assistant IA d’homologation en cybersécurité (Hydro-Québec)
+**Assistant IA d’homologation en cybersécurité (Hydro-Québec)**
+
+    <img width="927" height="507" alt="image" src="https://github.com/user-attachments/assets/af3750e7-f25c-40a9-98b6-4b6c9e89630f" />
 
 🎯 **Contexte**
 
