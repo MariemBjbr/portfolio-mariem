@@ -20,7 +20,23 @@ Elle correspond aux bonnes pratiques de conception logicielle pour des projets c
 🧩 **Architecture simplifiée (version actuelle)**
 
  <img width="532" height="218" alt="image" src="https://github.com/user-attachments/assets/6a0714e5-cacd-4044-84c1-0449e144f2ae" />
+ 
+ L'architecture hexagonale, aussi connue sous le nom d'architecture à base de ports et d'adaptateurs, est un patron d'architecture logicielle qui vise à isoler la logique métier d'une application de ses détails techniques et de son environnement. En séparant ces deux aspects par des "ports" (interfaces) et des "adaptateurs" (implémentations techniques), l'hexagone permet une plus grande flexibilité, une meilleure testabilité et une maintenance facilitée, rendant le système plus robuste et évolutif. 
+ 
+ **L'hexagone (le noyau métier)**:
+ 
+ Le cœur de l'application, qui contient la logique métier "pure" et est indépendant des technologies. 
+ 
+**Les ports** :
+ Les interfaces définies par le noyau métier pour interagir avec l'extérieur. 
+ 
+*8Les adaptateurs**:
 
+ Des composants qui font le lien entre l'extérieur (interfaces utilisateur, bases de données, autres systèmes) et les ports de l'hexagone, traduisant les appels et les données. 
+ 
+**Les dépendances inverses**:
+
+Les dépendances vont toujours de l'extérieur vers le centre (l'hexagone). 
 
 📅 **Statut du projet**
 
