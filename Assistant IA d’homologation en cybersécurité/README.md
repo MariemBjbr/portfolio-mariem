@@ -28,15 +28,23 @@ Elle correspond aux bonnes pratiques de conception logicielle pour des projets c
  Le cœur de l'application, qui contient la logique métier "pure" et est indépendant des technologies. 
  
 **Les ports** :
+
  Les interfaces définies par le noyau métier pour interagir avec l'extérieur. 
  
-*8Les adaptateurs**:
+**Les adaptateurs**:
 
  Des composants qui font le lien entre l'extérieur (interfaces utilisateur, bases de données, autres systèmes) et les ports de l'hexagone, traduisant les appels et les données. 
  
 **Les dépendances inverses**:
 
 Les dépendances vont toujours de l'extérieur vers le centre (l'hexagone). 
+
+**Avantages**
+
+Faible couplage: Le noyau métier est indépendant de l'infrastructure, ce qui permet de changer de base de données, d'interface utilisateur ou d'autres services sans affecter la logique métier. 
+Facilité de test: Le noyau métier peut être testé en isolation grâce à des adaptateurs qui simulent l'environnement technique (mocks), permettant des tests unitaires approfondis. 
+Évolutivité et maintenance: Il est plus facile d'ajouter de nouvelles fonctionnalités ou de modifier des existantes sans risquer des régressions fonctionnelles. 
+Flexibilité: L'application peut être pilotée par différents types d'interfaces (utilisateur, tests automatisés, scripts) ou interagir avec divers systèmes externes. 
 
 📅 **Statut du projet**
 
