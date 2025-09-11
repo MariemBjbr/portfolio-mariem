@@ -1,13 +1,11 @@
 # Drill_net_classification – Projet de stage
+<img width="1300" height="737" alt="image" src="https://github.com/user-attachments/assets/1d90242f-f55a-4444-874e-3c66e4b6f716" />
+
 
 Ce projet a été réalisé dans le cadre de mon **stage en apprentissage automatique appliqué à l’imagerie médicale**.  
 L’objectif était de développer un modèle de deep learning capable de **détecter automatiquement deux biomarqueurs sur des images OCT** :
 - **DRIL** (*Disorganization of Retinal Inner Layers*)  
 - **Discontinuités (DISC)* des couches rétiniennes
-- 
-
----<img width="1300" height="737" alt="image" src="https://github.com/user-attachments/assets/1d90242f-f55a-4444-874e-3c66e4b6f716" />
-
 
 ## Ce que j’ai fait
 - Création d’un **pipeline complet** d’entraînement et d’évaluation du modèle.
