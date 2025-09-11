@@ -11,7 +11,7 @@ Il regroupe différents projets réalisés dans le cadre académique et de stage
 - 🧠 **DrillNet – Détection DRIL (OCT)** → [drillnet](drillnet)  
   Réseau de neurones convolutionnel pour la détection de biomarqueurs.
   
-- 🔒 **Assistant IA d’homologation en cybersécurité** → [Assistant IA d’homologation en cybersécurité](./Assistant IA d’homologation en cybersécurité)
+- 🔒 **Assistant IA d’homologation en cybersécurité** → [Assistant IA d’homologation en cybersécurité](./Assistant%20IA%20d%E2%80%99homologation%20en%20cybers%C3%A9curit%C3%A9)
 
 Projet en cours – Remise finale prévue le 5 décembre 2025
 
