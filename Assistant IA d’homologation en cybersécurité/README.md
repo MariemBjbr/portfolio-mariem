@@ -15,17 +15,8 @@ Elle facilite l’ajout de nouvelles capacités sans impacter le reste du code.
 Elle correspond aux bonnes pratiques de conception logicielle pour des projets collaboratifs.
 
 🧩 Architecture simplifiée (version actuelle)
-           ┌──────────────────┐
-           │  Ports / Adapters│  ← (sources externes : JSON, MITRE, guides, API)
-           └─────────┬────────┘
-                     │
-             ┌───────▼────────┐
-             │  Core (RAG+LLM)│  ← (analyse croisée, génération de recommandations)
-             └───────┬────────┘
-                     │
-           ┌─────────▼─────────┐
-           │   Interface UI    │  ← (chatbot, affichage des résultats)
-           └───────────────────┘
+       <img width="532" height="218" alt="image" src="https://github.com/user-attachments/assets/6a0714e5-cacd-4044-84c1-0449e144f2ae" />
+
 
 📅 Statut du projet
 
@@ -35,7 +26,4 @@ Elle correspond aux bonnes pratiques de conception logicielle pour des projets c
 
 ✅ Étape actuelle : mise en place du cœur (RAG + LLM) et intégration des premiers adaptateurs.
 
-👩‍💻 Contribuer
 
-Chaque membre peut développer son module indépendamment (ex. ingestion JSON, indexation, UI…) sans toucher au code des autres.
-Merci de respecter l’architecture hexagonale pour garantir l’évolutivité et la modularité.
