@@ -1,0 +1,37 @@
+PDF to JSON (Lossless Extraction + Fallback)
+
+Ce projet propose un pipeline modulaire en Python (Colab / Jupyter) permettant de convertir des documents PDF en JSON structuré et vérifiable, prêt pour des usages comme la RAG (Retrieval-Augmented Generation).
+
+🚀 Fonctionnalités
+
+Extraction lossless : récupération du texte exact depuis le calque texte (PyMuPDF), sans OCR ni perte de caractères.
+
+Normalisation forte : correction des ligatures (ﬁ → fi), guillemets typographiques, tirets, espaces insécables, etc.
+
+Audit automatique : génération d’un fichier manifest.json avec :
+
+nombre de caractères,
+
+hash SHA256 du texte,
+
+ratio de couverture (coverage_char_ratio),
+
+pages validées ou corrigées.
+
+Fallback contrôlé : si une page est incomplète (coverage < 0.98), on remplace son texte par la version brute de référence → garantie qu’aucun mot n’est perdu.
+
+Traçabilité : chaque page est sauvegardée en JSON (texte + liste de mots + bounding box).
+
+Préparation RAG : les fichiers _fixed.jsonl sont propres et utilisables pour le chunking → VectorDB.
+
+📂 Structure de sortie
+
+Pour chaque PDF placé dans in/ :
+
+{base}.jsonl : version brute, page par page.
+
+{base}_manifest.json : rapport de vérification (coverage, stats, etc.).
+
+{base}_fixed.jsonl : version corrigée (fallback appliqué).
+
+Un fichier index.json récapitule tous les PDFs traités et les pages corrigées.
